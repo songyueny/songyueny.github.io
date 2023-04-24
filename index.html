@@ -191,11 +191,7 @@
 <p>然后打开Hexo\source_posts的目录，可以发现下面多了一个文件夹和一个.md文件</p>
 <p>编写完文件后，根目录下右键打开Git Bash Here输入hexo g生成静态网页，然后输入hexo s可以本地预览效果，最后输入hexo d上传到github上。</p>
 <h5 id="9-设置typora"><a href="#9-设置typora" class="headerlink" title="9.设置typora"></a>9.设置typora</h5><p>选择文件-&gt;偏好设置-&gt;图像-&gt;复制到指定路径(.&#x2F;${filename})即可与刚才设置的文件路径配合，实现图片直接就可以访问了</p>
-<h5 id="10-风格配置"><a href="#10-风格配置" class="headerlink" title="10.风格配置"></a>10.风格配置</h5><p>可在 themes 目录下生成 hexo-theme-Bean-Tech 文件夹，然后打开 Hexo 文件夹下的配置文件 _config.yml ，找到关键字 theme，修改参数为：theme：hexo-theme-Bean-Tech （其他主题修改成相应名称即可），<strong>再次注意冒号后面有一个空格！</strong></p>
-<p>现在我们的主题已经替换完成，将它部署到我们的博客，博客根目录下右键 Git Bash Here，输入以下命令：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-
-<p>现在访问我们的网站就可以看到主题已经更换了，但是比如网站标题，图标等都没有更换，我们博客文件中有两份主要的配置文件，名称都是 _config.yml ，它们均是用于站点配置使用的。其中，一份位于站点根目录下（比如我的：C:\MUYIio Blog\Hexo_config.yml），主要包含 Hexo 本身整站的配置；另一份位于主题目录下（比如我的：C:\MUYIio Blog\Hexo\themes\hexo-theme-matery_config.yml），这份配置由主题作者提供，主要用于配置主题相关的选项，一般 _config.yml 文件里都有相关注释，按需修改即可。</p>
+<h5 id="10-风格配置"><a href="#10-风格配置" class="headerlink" title="10.风格配置"></a>10.风格配置</h5><p>找到自己喜欢的风格，按照开发者给的文档配置就可以了</p>
 <p>常用命令</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">hexo new &quot;name&quot;       # 新建文章</span><br><span class="line">hexo new page &quot;name&quot;  # 新建页面</span><br><span class="line">hexo g                # 生成页面</span><br><span class="line">hexo d                # 部署</span><br><span class="line">hexo g -d             # 生成页面并部署</span><br><span class="line">hexo s                # 本地预览</span><br><span class="line">hexo clean            # 清除缓存和已生成的静态文件</span><br><span class="line">hexo help             # 帮助</span><br></pre></td></tr></table></figure>
 
